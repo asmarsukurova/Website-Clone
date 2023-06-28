@@ -86,8 +86,11 @@ header .header-flex .menu-bar {
   padding: 25px 0 0 0;
   color: #8b8b8b;
 }
+.home2 .box2 {
+  width: 405px;
+}
 .home2 .box2 img {
-  width: 56%;
+  width: 100%;
   margin: 50px 0 30px 0;
 }
 
@@ -119,7 +122,11 @@ header .header-flex .menu-bar {
 
 .home1 {
   background-color: #f8f8f8;
-  padding: 65px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home1 .page {
   border-right: 1px solid #8b8b8b;
@@ -134,14 +141,12 @@ header .header-flex .menu-bar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 150px;
-  padding: 100px;
+  padding: 70px;
 }
 .home3 .display-flex .box4 h2 {
   margin: 0px 0px 23px;
-  text-transform: uppercase;
   letter-spacing: 1.6px;
+  text-transform: uppercase;
   position: relative;
   display: inline-block;
   padding: 14px 0px 0px 35px;
@@ -165,6 +170,10 @@ header .header-flex .menu-bar {
   width: 45px;
   height: 45px;
   border: 1px solid #00aff0;
+}
+.home3 .display-flex .box5 p {
+  font-size: 15px;
+  color: #00aff0;
 }
 
 .featured {
@@ -576,6 +585,18 @@ header .header-flex .menu-bar {
   .home2 .box1 p {
     font-size: 25px;
     line-height: 41px;
+  }
+  .home2 .box2 {
+    width: 278px;
+  }
+  .home1 .page i {
+    font-size: 40px;
+  }
+  .home1 .page h1 {
+    font-size: 20px;
+  }
+  .home3 {
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 768px) {
