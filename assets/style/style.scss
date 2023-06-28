@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "./mixin";
 @import "./reset";
 @import "./variable";
@@ -147,7 +148,6 @@ header {
   height: 200px;
   @include center;
 
-
   .page {
     border-right: 1px solid $--gray;
 
@@ -163,7 +163,6 @@ header {
     @include center;
     flex-direction: column;
     padding: 70px;
-
 
     .box4 {
       h2 {
@@ -667,6 +666,131 @@ header {
     .f-box3 {
       img {
         margin: 60px;
+      }
+    }
+  }
+}
+
+.blogs {
+  margin-top: 30px;
+
+  .blog-box {
+    margin-top: 40px;
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    p {
+      color: $--color-p;
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    .img-box {
+      margin: 20px 0;
+      img {
+        width: 100%;
+      }
+    }
+
+    .button-box {
+      a {
+        text-decoration: none;
+        color: $--white;
+      }
+    }
+  }
+
+  .search-box {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 3px 10px;
+      border: 1px solid #ccc;
+      outline: none;
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+    .icon-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: $--blue;
+      width: 32px;
+      height: 32px;
+      padding: 5px;
+      @include center;
+
+      i {
+        color: $--white;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .categories-box {
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    h6 {
+      font-size: 20px;
+      font-weight: 600;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: -5px;
+        height: 2px;
+        width: 30px;
+        background-color: $--blue;
+      }
+    }
+
+    .categories-flex {
+      margin-top: 10px;
+      .category-box {
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        padding: 7px 15px;
+        &:hover {
+          background-color: $--blue;
+          transition: 0.7s ease;
+          -webkit-transition: 0.7s ease;
+          -moz-transition: 0.7s ease;
+          -ms-transition: 0.7s ease;
+          -o-transition: 0.7s ease;
+          color: $--white;
+          border: none;
+          cursor: pointer;
+        }
+        &:not(:hover) {
+          transition: 0.7s ease;
+        }
+        &:hover a,
+        &:hover p,
+        &:hover .icon-box i {
+          color: $--white;
+        }
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $--gray;
+          font-size: 12px;
+        }
+        p {
+          color: $--gray;
+          font-size: 12px;
+        }
+        .icon-box {
+          i {
+            color: $--gray;
+            font-size: 12px;
+          }
+        }
       }
     }
   }

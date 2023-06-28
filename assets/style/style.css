@@ -1,7 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 header {
@@ -566,6 +575,121 @@ header .header-flex .menu-bar {
 }
 .footer .general-box4 .f-box3 img {
   margin: 60px;
+}
+
+.blogs {
+  margin-top: 30px;
+}
+.blogs .blog-box {
+  margin-top: 40px;
+}
+.blogs .blog-box h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.blogs .blog-box p {
+  color: #7e7e7e;
+  font-size: 15px;
+  line-height: 26px;
+}
+.blogs .blog-box .img-box {
+  margin: 20px 0;
+}
+.blogs .blog-box .img-box img {
+  width: 100%;
+}
+.blogs .blog-box .button-box a {
+  text-decoration: none;
+  color: #fff;
+}
+.blogs .search-box {
+  position: relative;
+}
+.blogs .search-box input {
+  width: 100%;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.blogs .search-box input::-moz-placeholder {
+  font-size: 13px;
+}
+.blogs .search-box input::placeholder {
+  font-size: 13px;
+}
+.blogs .search-box .icon-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #00aff0;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogs .search-box .icon-box i {
+  color: #fff;
+  font-size: 13px;
+}
+.blogs .categories-box {
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.blogs .categories-box h6 {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.blogs .categories-box h6::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 30px;
+  background-color: #00aff0;
+}
+.blogs .categories-box .categories-flex {
+  margin-top: 10px;
+}
+.blogs .categories-box .categories-flex .category-box {
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  padding: 7px 15px;
+}
+.blogs .categories-box .categories-flex .category-box:hover {
+  background-color: #00aff0;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  -ms-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.blogs .categories-box .categories-flex .category-box:not(:hover) {
+  transition: 0.7s ease;
+}
+.blogs .categories-box .categories-flex .category-box:hover a, .blogs .categories-box .categories-flex .category-box:hover p, .blogs .categories-box .categories-flex .category-box:hover .icon-box i {
+  color: #fff;
+}
+.blogs .categories-box .categories-flex .category-box a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8b8b8b;
+  font-size: 12px;
+}
+.blogs .categories-box .categories-flex .category-box p {
+  color: #8b8b8b;
+  font-size: 12px;
+}
+.blogs .categories-box .categories-flex .category-box .icon-box i {
+  color: #8b8b8b;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 913px) {
