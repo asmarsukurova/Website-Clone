@@ -4,7 +4,7 @@
 @import "./variable";
 
 header {
-  padding: 20px 0;
+  padding: 30px 0;
 
   .header-flex {
     @include beetwen;
@@ -671,11 +671,65 @@ header {
   }
 }
 
+.header-image {
+  background-image: url("/assets/image/subheader-img1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 250px;
+
+
+
+  .content-box {
+    margin-top: 70px;
+    @include center;
+    flex-direction: column;
+
+    h4 {
+      font-size: 30px;
+      letter-spacing: 1.8px;
+      text-transform: 1.8px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 74%;
+
+    }
+
+  }
+}
+
+.page {
+  background-color: $--blogcolor;
+  @include center;
+  width: 100%;
+  height: 70px;
+
+  h6 {
+    color: $--white;
+    font-size: 20px;
+
+
+    &:last-child {
+      color: $--blue;
+    }
+  }
+
+  i {
+    color: $--white;
+    margin: 0 20px;
+
+  }
+
+}
+
 .blogs {
   margin-top: 30px;
 
   .blog-box {
     margin-top: 40px;
+
     h4 {
       font-weight: 600;
       font-size: 20px;
@@ -689,12 +743,15 @@ header {
 
     .img-box {
       margin: 20px 0;
+
       img {
         width: 100%;
       }
     }
 
     .button-box {
+      margin-top: 20px;
+
       a {
         text-decoration: none;
         color: $--white;
@@ -703,17 +760,20 @@ header {
   }
 
   .search-box {
+    margin-top: 20px;
     position: relative;
 
     input {
       width: 100%;
       padding: 3px 10px;
-      border: 1px solid #ccc;
+      border: 1px solid $--ccc;
       outline: none;
+
       &::placeholder {
         font-size: 13px;
       }
     }
+
     .icon-box {
       position: absolute;
       right: 0;
@@ -733,13 +793,15 @@ header {
 
   .categories-box {
     margin-top: 40px;
-    border: 1px solid #ccc;
+    border: 1px solid $--ccc;
     padding: 20px;
+
     h6 {
       font-size: 20px;
       font-weight: 600;
       position: relative;
-      &::before{
+
+      &::before {
         content: '';
         position: absolute;
         left: 0px;
@@ -752,10 +814,12 @@ header {
 
     .categories-flex {
       margin-top: 10px;
+
       .category-box {
         margin-top: 15px;
-        border: 1px solid #ccc;
+        border: 1px solid $--ccc;
         padding: 7px 15px;
+
         &:hover {
           background-color: $--blue;
           transition: 0.7s ease;
@@ -767,24 +831,29 @@ header {
           border: none;
           cursor: pointer;
         }
+
         &:not(:hover) {
           transition: 0.7s ease;
         }
+
         &:hover a,
         &:hover p,
         &:hover .icon-box i {
           color: $--white;
         }
+
         a {
           text-decoration: none;
           text-transform: uppercase;
           color: $--gray;
           font-size: 12px;
         }
+
         p {
           color: $--gray;
           font-size: 12px;
         }
+
         .icon-box {
           i {
             color: $--gray;
@@ -793,7 +862,66 @@ header {
         }
       }
     }
+
+    .POST {
+      margin: 20px 0;
+
+      h5 {
+        font-size: 17px;
+
+      }
+
+      p {
+        font-size: 13px;
+        color: $--color-p;
+      }
+    }
+
+    .comments {
+    
+      .comment{
+        margin-top: 25px;
+
+        h5 {
+          font-size: 20px;
+  
+        }
+  
+        p {
+          font-size: 13px;
+          color: $--color-p;
+        }
+      }
+    }
+ 
+.button-box-blog {
+  @include center;
+  margin: 80px 0;
+
+
+  .button {
+    @include center;
+    background-color: $--button-color;
+    border: 1px solid $--button-color;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+    i {
+      color: $--white; 
+      font-size: 20px;
+    }
+
+    h6 {
+      color: $--white;
+      font-size: 17px;
+    }
+
+
   }
 }
+
+}
+
 
 @import "./responsive";
