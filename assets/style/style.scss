@@ -677,26 +677,37 @@ header {
   background-position: top;
   width: 100%;
   height: 250px;
+  position: relative;
+  .absolute-dark {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 46, 46, 0.9);
+  }
+  .blog-large {
+    position: absolute;
+    top: 20px;
+    z-index: 3;
+    width: 100%;
 
+    .content-box {
+      margin-top: 70px;
+      @include center;
+      flex-direction: column;
+      color: $--white;
+      h4 {
+        font-size: 30px;
+        letter-spacing: 1.8px;
+        text-transform: 1.8px;
+      }
 
-
-  .content-box {
-    margin-top: 70px;
-    @include center;
-    flex-direction: column;
-
-    h4 {
-      font-size: 30px;
-      letter-spacing: 1.8px;
-      text-transform: 1.8px;
+      p {
+        font-size: 16px;
+        width: 74%;
+      }
     }
-
-    p {
-      font-size: 16px;
-      width: 74%;
-
-    }
-
   }
 }
 
@@ -710,7 +721,6 @@ header {
     color: $--white;
     font-size: 20px;
 
-
     &:last-child {
       color: $--blue;
     }
@@ -719,9 +729,7 @@ header {
   i {
     color: $--white;
     margin: 0 20px;
-
   }
-
 }
 
 .blogs {
@@ -802,7 +810,7 @@ header {
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0px;
         bottom: -5px;
@@ -868,7 +876,6 @@ header {
 
       h5 {
         font-size: 17px;
-
       }
 
       p {
@@ -878,50 +885,44 @@ header {
     }
 
     .comments {
-    
-      .comment{
+      .comment {
         margin-top: 25px;
 
         h5 {
           font-size: 20px;
-  
         }
-  
+
         p {
           font-size: 13px;
           color: $--color-p;
         }
       }
     }
- 
-.button-box-blog {
-  @include center;
-  margin: 80px 0;
 
+    .button-box-blog {
+      @include center;
+      margin: 80px 0;
 
-  .button {
-    @include center;
-    background-color: $--button-color;
-    border: 1px solid $--button-color;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+      .button {
+        @include center;
+        background-color: $--button-color;
+        border: 1px solid $--button-color;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
 
-    i {
-      color: $--white; 
-      font-size: 20px ;
+        i {
+          color: $--white;
+          font-size: 20px;
+        }
+
+        h6 {
+          color: $--white;
+          font-size: 17px;
+        }
+      }
     }
-
-    h6 {
-      color: $--white;
-      font-size: 17px;
-    }
-
-
   }
 }
 
-}
-
-
-@import "./responsive";
+@import "./responsive.scss";
