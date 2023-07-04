@@ -1,71 +1,97 @@
-
-@media screen  and (max-width:913px){
-  .home2{
+@media screen and (max-width:913px) {
+  .home2 {
     height: auto;
     background-image: none;
-    .box1{
+
+    .box1 {
       margin-top: 20px;
-      h1{
+
+      h1 {
         font-size: 30px;
       }
-      span{
+
+      span {
         font-size: 25px;
       }
-      p{
+
+      p {
         font-size: 25px;
         line-height: 41px;
       }
     }
 
-    .box2{
+    .box2 {
       width: 278px;
     }
   }
 
-  .home1{
-    .page{
-      i{
+  .home1 {
+    .page {
+      i {
         font-size: 40px;
       }
-      h1{
+
+      h1 {
         font-size: 20px;
       }
     }
   }
 
-  .home3{
-    padding-top: 50px ;
+  .home3 {
+    padding-top: 50px;
   }
 
 
 }
+
 @media screen and (max-width: 768px) {
   header {
     .header-flex {
+
       .content-box,
       .button-box {
         display: none;
       }
-      .menu-bar{
+
+      .menu-bar {
         display: block;
         border-left: 1px solid $--black;
-        padding-left:10px;
+        padding-left: 10px;
         color: $--blue;
 
-        i{
-            font-size: 20px;
+        i {
+          font-size: 20px;
         }
       }
     }
   }
-  .about{
+
+  .about {
     background-image: none;
     height: auto;
-    .content-box{
+
+    .content-box {
       width: 100%;
     }
   }
 
+  .buy-book {
+    .display-flex {
+      @include center;
+      flex-direction: column;
+
+      .content-box{
+       
+        .title{
+          font-size: 13px;
+        }
+
+        p{
+          font-size: 10px;
+         
+        }
+      }
+    }
+  }
+
 }
-
-
