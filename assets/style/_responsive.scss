@@ -1,4 +1,40 @@
-@media screen and (max-width:913px) {
+@media screen and (max-width: 1300px) {
+  .home7 {
+    .general-box {
+      .box15 {
+        height: auto;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  header {
+    .header-flex {
+      .content-box {
+        nav {
+          .nav-items {
+            .nav-item {
+              a {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        font-size: 12px;
+      }
+      .image {
+        width: 100px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 913px) {
   .home2 {
     height: auto;
     background-image: none;
@@ -40,14 +76,11 @@
   .home3 {
     padding-top: 50px;
   }
-
-
 }
 
 @media screen and (max-width: 768px) {
   header {
     .header-flex {
-
       .content-box,
       .button-box {
         display: none;
@@ -81,16 +114,13 @@
     .display-flex {
       @include center;
 
-
       .content-box {
-
         .title {
           font-size: 17px;
         }
 
         p {
           font-size: 12px;
-
         }
 
         .li-text {
@@ -99,10 +129,14 @@
 
         .pay-buttons {
           flex-direction: column;
+          align-items: start;
           margin-top: 15px;
 
           .button {
             margin-top: 15px;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
           }
         }
 
@@ -115,15 +149,10 @@
     }
   }
 
-
   .table {
-
-
     .table-ul {
-
       .table-li {
         line-height: 1;
-        height: 130px;
         padding: 0;
         padding-left: 10px;
 
@@ -131,12 +160,11 @@
           font-size: 13px;
         }
 
-        p{
+        p {
           font-size: 10px;
           color: $--color-p;
         }
       }
     }
   }
-
 }

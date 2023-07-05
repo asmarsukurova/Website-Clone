@@ -8,7 +8,6 @@ header {
 
   .header-flex {
     @include beetwen;
-
     .content-box {
       nav {
         .nav-items {
@@ -63,7 +62,6 @@ header {
             a {
               color: $--blue;
             }
-
           }
         }
       }
@@ -885,14 +883,12 @@ header {
 
         &:hover {
           color: $--blue;
-          transition: .6s ease;
+          transition: 0.6s ease;
         }
 
         &:not(:hover) {
-          transition: .6s ease;
-
+          transition: 0.6s ease;
         }
-
       }
 
       p {
@@ -910,12 +906,11 @@ header {
 
           &:hover {
             color: $--blue;
-            transition: .6s ease;
+            transition: 0.6s ease;
           }
 
           &:not(:hover) {
-            transition: .6s ease;
-
+            transition: 0.6s ease;
           }
         }
 
@@ -942,19 +937,16 @@ header {
 
         &:hover {
           background-color: $--blue;
-          transition: .6s ease;
-
+          transition: 0.6s ease;
         }
 
         &:not(:hover) {
-          transition: .6s ease;
+          transition: 0.6s ease;
         }
       }
     }
   }
-
 }
-
 
 .button-box-blog {
   @include center;
@@ -971,12 +963,11 @@ header {
     &:hover {
       background-color: $--blue;
       border-color: $--blue;
-      transition: .6s ease;
+      transition: 0.6s ease;
     }
 
     &:not(:hover) {
-      transition: .6s ease;
-
+      transition: 0.6s ease;
     }
 
     i {
@@ -991,7 +982,6 @@ header {
   }
 }
 
-
 .blog-detail {
   background-color: $--border;
   width: 100%;
@@ -999,13 +989,9 @@ header {
   display: flex;
   align-items: center;
 
-
-
-
   .content-box {
     display: flex;
     align-items: center;
-
 
     p {
       color: $--black;
@@ -1026,7 +1012,6 @@ header {
     }
   }
 }
-
 
 .buy-book {
   margin-top: 20px;
@@ -1049,8 +1034,6 @@ header {
     }
 
     .content-box {
-
-
       .title {
         font-size: 20px;
       }
@@ -1066,8 +1049,6 @@ header {
       }
 
       .price-text {
-
-
         span {
           margin-right: 20px;
           color: $--black;
@@ -1086,7 +1067,7 @@ header {
       }
 
       .li-text {
-        @include center;
+        @include start;
         margin-top: 30px;
 
         ul {
@@ -1095,13 +1076,12 @@ header {
             list-style: none;
             margin: 0px 0px 30px;
             border-right: 1px solid $--border;
-            padding: 20px;
+            padding-right: 20px;
 
             p {
               color: $--color-p;
             }
           }
-
         }
       }
 
@@ -1136,32 +1116,30 @@ header {
 
         &:hover {
           background-color: $--blue;
-          transition: .7s ease;
+          transition: 0.7s ease;
         }
 
         &:not(:hover) {
-          transition: .7s ease;
+          transition: 0.7s ease;
         }
-
 
         &:hover h2 {
           color: $--white;
-          transition: .7s ease;
+          transition: 0.7s ease;
         }
 
         &:not(:hover) h2 {
-          transition: .7s ease;
+          transition: 0.7s ease;
         }
 
         &:hover i {
           color: $--white;
-          transition: .7s ease;
+          transition: 0.7s ease;
         }
 
         &:not(:hover) i {
-          transition: .7s ease;
+          transition: 0.7s ease;
         }
-
 
         h2 {
           font-size: 17px;
@@ -1173,10 +1151,8 @@ header {
           margin-left: 5px;
           color: $--blue;
         }
-
       }
     }
-
 
     .sosial-media {
       display: flex;
@@ -1251,13 +1227,11 @@ header {
   }
 }
 
-
 .book-description {
   margin-top: 40px;
 
   .display-flex {
     h2 {
-
       text-transform: uppercase;
       font-size: 22px;
       position: relative;
@@ -1286,9 +1260,7 @@ header {
   margin-top: 40px;
 
   .display-flex {
-
     h2 {
-
       text-transform: uppercase;
       font-size: 22px;
       position: relative;
@@ -1307,7 +1279,7 @@ header {
     p {
       color: $--button-color;
       margin-top: 23px;
-      font-size: 15px; 
+      font-size: 15px;
       line-height: 26px;
     }
   }
@@ -1339,13 +1311,12 @@ header {
       &:hover h4 {
         color: $--blue;
 
-        transition: .7s ease;
+        transition: 0.7s ease;
       }
 
       &:not(:hover) h4 {
-        transition: .7s ease;
+        transition: 0.7s ease;
       }
-
 
       h4 {
         margin: 0px 0px 1px;
@@ -1356,14 +1327,9 @@ header {
         margin: 0px;
         font-size: 13px;
         color: $--color-p;
-
       }
     }
   }
 }
-
-
-
-
 
 @import "./responsive.scss";
