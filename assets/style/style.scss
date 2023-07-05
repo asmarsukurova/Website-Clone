@@ -1011,6 +1011,10 @@ header {
       color: $--black;
       font-size: 19px;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       &:last-child {
         color: $--blue;
         font-size: 17px;
@@ -1025,11 +1029,12 @@ header {
 
 
 .buy-book {
- margin-top: 20px;
- box-sizing: border-box;
- width: 100%;
+  margin-top: 20px;
+
+  width: 100%;
 
   .display-flex {
+    box-sizing: border-box;
     @include center;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -1044,6 +1049,7 @@ header {
     }
 
     .content-box {
+
 
       .title {
         font-size: 20px;
@@ -1104,7 +1110,7 @@ header {
         align-items: center;
 
         h6 {
-         margin: 1px 20px 0 0;
+          margin: 1px 20px 0 0;
         }
 
         input {
@@ -1128,6 +1134,35 @@ header {
         align-items: center;
         padding: 5px 23px;
 
+        &:hover {
+          background-color: $--blue;
+          transition: .7s ease;
+        }
+
+        &:not(:hover) {
+          transition: .7s ease;
+        }
+
+
+        &:hover h2 {
+          color: $--white;
+          transition: .7s ease;
+        }
+
+        &:not(:hover) h2 {
+          transition: .7s ease;
+        }
+
+        &:hover i {
+          color: $--white;
+          transition: .7s ease;
+        }
+
+        &:not(:hover) i {
+          transition: .7s ease;
+        }
+
+
         h2 {
           font-size: 17px;
           margin: 5px 10px;
@@ -1136,6 +1171,7 @@ header {
 
         i {
           margin-left: 5px;
+          color: $--blue;
         }
 
       }
@@ -1216,6 +1252,115 @@ header {
 }
 
 
+.book-description {
+  margin-top: 40px;
+
+  .display-flex {
+    h2 {
+
+      text-transform: uppercase;
+      font-size: 22px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -5px;
+        height: 2px;
+        width: 40px;
+        background-color: $--blue;
+      }
+    }
+
+    p {
+      color: $--button-color;
+      margin-top: 23px;
+      font-size: 15px;
+      line-height: 26px;
+    }
+  }
+}
+
+.book-detail {
+  margin-top: 40px;
+
+  .display-flex {
+
+    h2 {
+
+      text-transform: uppercase;
+      font-size: 22px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -5px;
+        height: 2px;
+        width: 40px;
+        background-color: $--blue;
+      }
+    }
+
+    p {
+      color: $--button-color;
+      margin-top: 23px;
+      font-size: 15px; 
+      line-height: 26px;
+    }
+  }
+}
+
+.table {
+  margin-top: 40px;
+
+  .table-ul {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+    height: 209px;
+    padding: 12px 0px;
+    background-color: $--white;
+    border-radius: 5px;
+
+    .table-li {
+      float: left;
+      line-height: 3;
+      width: 33.333%;
+      height: 98px;
+      padding: 17px 0px 22px 30px;
+      list-style: none;
+      border-bottom: 1px solid $--border;
+      border-right: 1px solid $--border;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      &:hover h4 {
+        color: $--blue;
+
+        transition: .7s ease;
+      }
+
+      &:not(:hover) h4 {
+        transition: .7s ease;
+      }
+
+
+      h4 {
+        margin: 0px 0px 1px;
+        font-size: 17px;
+      }
+
+      p {
+        margin: 0px;
+        font-size: 13px;
+        color: $--color-p;
+
+      }
+    }
+  }
+}
 
 
 

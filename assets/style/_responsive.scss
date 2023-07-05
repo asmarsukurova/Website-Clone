@@ -76,19 +76,64 @@
   }
 
   .buy-book {
+    width: 100%;
+
     .display-flex {
       @include center;
-      flex-direction: column;
 
-      .content-box{
-       
-        .title{
+
+      .content-box {
+
+        .title {
+          font-size: 17px;
+        }
+
+        p {
+          font-size: 12px;
+
+        }
+
+        .li-text {
+          margin-top: 15px;
+        }
+
+        .pay-buttons {
+          flex-direction: column;
+          margin-top: 15px;
+
+          .button {
+            margin-top: 15px;
+          }
+        }
+
+        .sosial-media {
+          h3 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .table {
+
+
+    .table-ul {
+
+      .table-li {
+        line-height: 1;
+        height: 130px;
+        padding: 0;
+        padding-left: 10px;
+
+        h4 {
           font-size: 13px;
         }
 
         p{
           font-size: 10px;
-         
+          color: $--color-p;
         }
       }
     }

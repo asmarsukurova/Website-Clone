@@ -861,6 +861,9 @@ header .header-flex .menu-bar {
   color: #000;
   font-size: 19px;
 }
+.blog-detail .content-box p:hover {
+  cursor: pointer;
+}
 .blog-detail .content-box p:last-child {
   color: #00aff0;
   font-size: 17px;
@@ -871,10 +874,10 @@ header .header-flex .menu-bar {
 
 .buy-book {
   margin-top: 20px;
-  box-sizing: border-box;
   width: 100%;
 }
 .buy-book .display-flex {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -951,6 +954,27 @@ header .header-flex .menu-bar {
   align-items: center;
   padding: 5px 23px;
 }
+.buy-book .display-flex .pay-buttons .button:hover {
+  background-color: #00aff0;
+  transition: 0.7s ease;
+}
+.buy-book .display-flex .pay-buttons .button:not(:hover) {
+  transition: 0.7s ease;
+}
+.buy-book .display-flex .pay-buttons .button:hover h2 {
+  color: #fff;
+  transition: 0.7s ease;
+}
+.buy-book .display-flex .pay-buttons .button:not(:hover) h2 {
+  transition: 0.7s ease;
+}
+.buy-book .display-flex .pay-buttons .button:hover i {
+  color: #fff;
+  transition: 0.7s ease;
+}
+.buy-book .display-flex .pay-buttons .button:not(:hover) i {
+  transition: 0.7s ease;
+}
 .buy-book .display-flex .pay-buttons .button h2 {
   font-size: 17px;
   margin: 5px 10px;
@@ -958,6 +982,7 @@ header .header-flex .menu-bar {
 }
 .buy-book .display-flex .pay-buttons .button i {
   margin-left: 5px;
+  color: #00aff0;
 }
 .buy-book .display-flex .sosial-media {
   display: flex;
@@ -1028,6 +1053,94 @@ header .header-flex .menu-bar {
   color: #fff;
 }
 
+.book-description {
+  margin-top: 40px;
+}
+.book-description .display-flex h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  position: relative;
+}
+.book-description .display-flex h2::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 40px;
+  background-color: #00aff0;
+}
+.book-description .display-flex p {
+  color: #646161;
+  margin-top: 23px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.book-detail {
+  margin-top: 40px;
+}
+.book-detail .display-flex h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  position: relative;
+}
+.book-detail .display-flex h2::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 40px;
+  background-color: #00aff0;
+}
+.book-detail .display-flex p {
+  color: #646161;
+  margin-top: 23px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.table {
+  margin-top: 40px;
+}
+.table .table-ul {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+  height: 209px;
+  padding: 12px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.table .table-ul .table-li {
+  float: left;
+  line-height: 3;
+  width: 33.333%;
+  height: 98px;
+  padding: 17px 0px 22px 30px;
+  list-style: none;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.table .table-ul .table-li:hover h4 {
+  color: #00aff0;
+  transition: 0.7s ease;
+}
+.table .table-ul .table-li:not(:hover) h4 {
+  transition: 0.7s ease;
+}
+.table .table-ul .table-li h4 {
+  margin: 0px 0px 1px;
+  font-size: 17px;
+}
+.table .table-ul .table-li p {
+  margin: 0px;
+  font-size: 13px;
+  color: #7e7e7e;
+}
+
 @media screen and (max-width: 913px) {
   .home2 {
     height: auto;
@@ -1080,16 +1193,44 @@ header .header-flex .menu-bar {
   .about .content-box {
     width: 100%;
   }
+  .buy-book {
+    width: 100%;
+  }
   .buy-book .display-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
   }
   .buy-book .display-flex .content-box .title {
-    font-size: 13px;
+    font-size: 17px;
   }
   .buy-book .display-flex .content-box p {
+    font-size: 12px;
+  }
+  .buy-book .display-flex .content-box .li-text {
+    margin-top: 15px;
+  }
+  .buy-book .display-flex .content-box .pay-buttons {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .buy-book .display-flex .content-box .pay-buttons .button {
+    margin-top: 15px;
+  }
+  .buy-book .display-flex .content-box .sosial-media h3 {
+    font-size: 14px;
+  }
+  .table .table-ul .table-li {
+    line-height: 1;
+    height: 130px;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .table .table-ul .table-li h4 {
+    font-size: 13px;
+  }
+  .table .table-ul .table-li p {
     font-size: 10px;
+    color: #7e7e7e;
   }
 }/*# sourceMappingURL=style.css.map */
