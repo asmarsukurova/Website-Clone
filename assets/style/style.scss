@@ -8,6 +8,7 @@ header {
 
   .header-flex {
     @include beetwen;
+
     .content-box {
       nav {
         .nav-items {
@@ -1331,5 +1332,320 @@ header {
     }
   }
 }
+
+
+.event-blogs {
+  margin-top: 30px;
+
+  .blog {
+    margin-top: 35px;
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid $--border;
+    @include center;
+
+    .content-box {
+      margin-left: 25px;
+
+
+      .icon-box {
+        @include start;
+        margin-bottom: 10px;
+
+        i {
+          color: $--blue;
+          margin-right: 10px;
+
+
+        }
+
+        p {
+          color: $--color-p;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        letter-spacing: 1.1px;
+        margin-bottom: 13px;
+      }
+
+      span {
+        color: $--color-p;
+
+
+      }
+
+      p {
+        color: $--color-p;
+        margin: 20px 0;
+      }
+    }
+
+
+
+    .button {
+      border: 1px solid $--blue;
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      padding: 5px 23px;
+      width: 25%;
+      margin-bottom: 15px;
+
+      &:hover {
+        background-color: $--blue;
+        transition: 0.7s ease;
+      }
+
+      &:not(:hover) {
+        transition: 0.7s ease;
+      }
+
+      &:hover h2 {
+        color: $--white;
+        transition: 0.7s ease;
+      }
+
+      &:not(:hover) h2 {
+        transition: 0.7s ease;
+      }
+
+      &:hover i {
+        color: $--white;
+        transition: 0.7s ease;
+      }
+
+      &:not(:hover) i {
+        transition: 0.7s ease;
+      }
+
+      h2 {
+        font-size: 15px;
+        margin: 5px 10px;
+        color: $--blue;
+      }
+
+      i {
+        margin-left: 5px;
+        color: $--blue;
+      }
+    }
+  }
+
+  .search-box {
+    margin-top: 20px;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 3px 10px;
+      border: 1px solid $--ccc;
+      outline: none;
+
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+
+    .icon-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: $--blue;
+      width: 32px;
+      height: 32px;
+      padding: 5px;
+      @include center;
+
+      i {
+        color: $--white;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .categories-box {
+    margin-top: 40px;
+    border: 1px solid $--ccc;
+    padding: 20px;
+    height: 350px;
+
+    h6 {
+      font-size: 20px;
+      font-weight: 600;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -5px;
+        height: 2px;
+        width: 30px;
+        background-color: $--blue;
+      }
+    }
+
+    .categories-flex {
+      margin-top: 10px;
+
+      .category-box {
+        margin-top: 15px;
+        border: 1px solid $--ccc;
+        padding: 7px 15px;
+
+        &:hover {
+          background-color: $--blue;
+          transition: 0.7s ease;
+          -webkit-transition: 0.7s ease;
+          -moz-transition: 0.7s ease;
+          -ms-transition: 0.7s ease;
+          -o-transition: 0.7s ease;
+          color: $--white;
+          border: none;
+          cursor: pointer;
+        }
+
+        &:not(:hover) {
+          transition: 0.7s ease;
+        }
+
+        &:hover a,
+        &:hover p,
+        &:hover .icon-box i {
+          color: $--white;
+        }
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $--gray;
+          font-size: 12px;
+        }
+
+        p {
+          color: $--gray;
+          font-size: 12px;
+        }
+
+        .icon-box {
+          i {
+            color: $--gray;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .POST {
+      margin: 20px 0;
+
+      h5 {
+        font-size: 17px;
+
+        &:hover {
+          color: $--blue;
+          transition: 0.6s ease;
+        }
+
+        &:not(:hover) {
+          transition: 0.6s ease;
+        }
+      }
+
+      p {
+        font-size: 13px;
+        color: $--color-p;
+      }
+    }
+
+    .comments {
+      .comment {
+        margin-top: 25px;
+
+        h5 {
+          font-size: 20px;
+
+          &:hover {
+            color: $--blue;
+            transition: 0.6s ease;
+          }
+
+          &:not(:hover) {
+            transition: 0.6s ease;
+          }
+        }
+
+        p {
+          font-size: 13px;
+          color: $--color-p;
+        }
+      }
+    }
+
+    .tags {
+      margin-top: 30px;
+
+      a {
+        text-decoration: none;
+        color: $--color-p;
+        float: left;
+        font-size: 15px;
+        border: 1px solid $--border;
+        padding: 5px 16px 6px;
+        margin: 5px 15px 10px 0px;
+        text-transform: uppercase;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: $--blue;
+          transition: 0.6s ease;
+        }
+
+        &:not(:hover) {
+          transition: 0.6s ease;
+        }
+      }
+    }
+  }
+}
+
+
+.shop-blogs {
+  margin-top: 80px;
+
+  .image-box {
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-box {
+    @include start;
+    flex-direction: column;
+    margin-top: 10px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .rating-box {
+      span {
+        margin-right: 5px;
+      }
+
+      del {
+        margin-right: 50px;
+        color: $--color-p;
+      }
+
+      i {
+        color: $--blue;
+      }
+    }
+  }
+}
+
+
 
 @import "./responsive.scss";
