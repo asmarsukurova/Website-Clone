@@ -3,12 +3,14 @@
     .general-box {
       .box15 {
         height: auto;
+
         p {
           font-size: 16px;
         }
       }
     }
   }
+
   header {
     .header-flex {
       .content-box {
@@ -22,11 +24,14 @@
           }
         }
       }
+
       .btn {
         font-size: 12px;
       }
+
       .image {
         width: 100px;
+
         img {
           width: 100%;
         }
@@ -34,6 +39,7 @@
     }
   }
 }
+
 @media screen and (max-width: 913px) {
   .home2 {
     height: auto;
@@ -76,11 +82,53 @@
   .home3 {
     padding-top: 50px;
   }
+
+
+  .header-image {
+    .blog-large {
+      .content-box {
+        h4 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .sponsor {
+    .image-flex {
+      flex-direction: column;
+
+      img {
+        width: auto;
+
+      }
+    }
+
+  }
+
+  .pages-faq {
+    .pages {
+      .page-border {
+        padding: 31px;
+
+        h5 {
+          font-size: 15px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   header {
     .header-flex {
+
       .content-box,
       .button-box {
         display: none;

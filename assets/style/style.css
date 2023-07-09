@@ -188,7 +188,7 @@ header .header-flex .menu-bar {
 }
 .home3 .display-flex .box5 p {
   font-size: 15px;
-  color: #00aff0;
+  color: #7e7e7e;
 }
 
 .featured {
@@ -1399,6 +1399,145 @@ header .header-flex .menu-bar {
   color: #00aff0;
 }
 
+.pages-faq {
+  margin-bottom: 50px;
+}
+.pages-faq .categories-box {
+  margin-top: 40px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  padding: 50px;
+  height: auto;
+}
+.pages-faq .categories-box h6 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.pages-faq .categories-box h6::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 2px;
+  width: 30px;
+  background-color: #00aff0;
+}
+.pages-faq .categories-box .categories-flex {
+  margin-top: 10px;
+  margin-top: 35px;
+}
+.pages-faq .categories-box .categories-flex .category-box {
+  margin: 20px 0 15px 0;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  padding: 7px 40px;
+  height: 45px;
+}
+.pages-faq .categories-box .categories-flex .category-box:first-child {
+  background-color: #00aff0;
+  border: none;
+}
+.pages-faq .categories-box .categories-flex .category-box:first-child a,
+.pages-faq .categories-box .categories-flex .category-box:first-child .icon-box i {
+  color: #fff;
+  font-size: 15px;
+}
+.pages-faq .categories-box .categories-flex .category-box:hover {
+  background-color: #00aff0;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  -ms-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.pages-faq .categories-box .categories-flex .category-box:not(:hover) {
+  transition: 0.7s ease;
+}
+.pages-faq .categories-box .categories-flex .category-box:hover a, .pages-faq .categories-box .categories-flex .category-box:hover .icon-box i {
+  color: #fff;
+}
+.pages-faq .categories-box .categories-flex .category-box a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+}
+.pages-faq .categories-box .categories-flex .category-box p {
+  color: #8b8b8b;
+  font-size: 12px;
+}
+.pages-faq .categories-box .categories-flex .category-box .icon-box i {
+  color: #8b8b8b;
+  font-size: 12px;
+}
+.pages-faq .pages {
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  height: auto;
+}
+.pages-faq .pages .page-border {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.pages-faq .pages .page-border:last-child {
+  border: none;
+}
+.pages-faq .pages .page-border i {
+  color: #00aff0;
+}
+
+.sponsor {
+  margin-bottom: 50px;
+}
+.sponsor .image-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor .image-flex img {
+  width: 100%;
+  margin: 10px 40px;
+}
+
+.error {
+  margin: 40px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ececec;
+}
+.error .display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.error .display-flex h3 {
+  margin: 20px 0;
+}
+.error .display-flex p {
+  color: #7e7e7e;
+}
+.error .display-flex .image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error .display-flex .image-box h2 {
+  font-size: 150px;
+}
+.error .display-flex .image-box img {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1300px) {
   .home7 .general-box .box15 {
     height: auto;
@@ -1448,6 +1587,26 @@ header .header-flex .menu-bar {
   }
   .home3 {
     padding-top: 50px;
+  }
+  .header-image .blog-large .content-box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .header-image .blog-large .content-box p {
+    font-size: 14px;
+  }
+  .sponsor .image-flex {
+    flex-direction: column;
+  }
+  .sponsor .image-flex img {
+    width: auto;
+  }
+  .pages-faq .pages .page-border {
+    padding: 31px;
+  }
+  .pages-faq .pages .page-border h5 {
+    font-size: 15px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 768px) {
