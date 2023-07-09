@@ -1782,6 +1782,7 @@
   }
 
   .error {
+    padding: 40px 0;
     margin: 40px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
     border: 1px solid $--border;
@@ -1791,6 +1792,7 @@
       @include center;
       flex-direction: column;
 
+    
       h3{
         margin: 20px 0;
       }
@@ -1813,6 +1815,23 @@
 
         }
       }
+      .button-box{
+        border: 1px solid $--blue;
+        background-color: $--blue;
+        margin-top: 20px;
+        width: 10%;
+        padding: 10px 20px;
+        @include center;
+        @include border;
+
+        a{
+          text-decoration: none;
+          font-size: 15px;
+          color: $--white;
+        }
+
+        }
+
     }
   }
 

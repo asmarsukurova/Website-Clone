@@ -215,4 +215,24 @@
       }
     }
   }
+
+
+  .event-blogs{
+    .blog {
+      flex-direction: column;
+
+      .button{
+        width: 100%;
+        @include beetwen;
+      }
+
+      .image-box{
+        width: 100%;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
