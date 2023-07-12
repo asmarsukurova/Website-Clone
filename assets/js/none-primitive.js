@@ -3,12 +3,12 @@
 // var name3 = "asmar";
 // var name4= 'Pervae';
 
-const names = ["Rahide", "Aqsin", "Asmar"];
+// const names = ["Rahide", "Aqsin", "Asmar"];
 
-console.log(names);
+// console.log(names);
 
-names.push("Pervane");
-console.log(names);
+// names.push("Pervane");
+// console.log(names);
 
 const Cars = [
   {
